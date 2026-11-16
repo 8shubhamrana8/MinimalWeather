@@ -1,0 +1,87 @@
+body {
+  margin: auto;
+  background: linear-gradient(180deg, #00084f 0.000%, #001e78 25.000%, #0034a6 50.000%, #0049d8 75.000%, #005eff 100.000%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  height: 100dvh;
+  font-family: monospace;
+}
+
+.content {
+  background-color: rgba(255, 255, 255,0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255,0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  padding-inline: 30px;
+  padding-block: 20px;
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  gap: 20px;
+}
+
+.form:hover {
+  transform: scale(1.15);
+}
+
+.text-city {
+   padding-block: 10px;
+   padding-inline: 20px;
+}
+
+.rounded {
+  border-radius: 10px;
+  border: none;
+}
+
+text-city {
+  background-color: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+}
+
+input:required:focus:invalid {
+  border: 1px solid #ff4d4d;
+  outline: none;
+}
+
+.find-city {
+  background-color: white;
+  padding-inline: 15px;
+  padding-block: 10px;
+}
+
+.find-city:hover {
+  background-color: mediumseagreen;
+  color: white;
+}
+
+#loading {
+  color: white;
+  font-size: xx-large;
+}
+
+#content {
+  display: flex;
+  width: 90dvw;
+  height: 80%;
+}
+
+.weekDataDiv {
+  border-radius: 20px;
+}
+
+.info {
+  font-size: medium;
+  font-weight: bold;
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form content" id="form" style="display: block">
+      <input
+        type="text"
+        placeholder="Enter City"
+        id="city"
+        class="text-city rounded"
+      />
+      <button type="submit" class="find-city rounded" id="go">Go</button>
+    </div>
+    <div class="loader content" style="display: none" id="loading">
+      Loading...
+    </div>
+    <div class="content container" style="display: none; color: aliceblue; align-items: center; justify-content: center; padding: 20px;" id="content">
+      <div id = "Day" style="height: 80%; width: 100%; display: flex; padding: 5px; justify-content: space-around;">
+            <div id="now" style="width: 60%; height: 100%; display: flex; flex-direction: column;">
+                <div style="height: 100%; display: flex; justify-content: space-between; padding-inline: 10px;">
+                    <div style="font-size: 30px; padding: 5px; margin: auto;">
+                        <p id="place">New Delhi, India <span id="datetime" style="font-size: 20px;">2026-11-12T14:00</span></p>
+                        <p id="accurate">26 <span id= "feelslike" style = "font-size: 20px;"> but feels like 23</span></p>
+                        <p id="humidity">relative humidity: 74%</p>
+                    </div>
+                    <div id="weatherIcon" style="margin: auto;">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="allDay" style="width: 30%; display: flex; flex-direction: column; gap: 5px; margin-bottom: 10px;">
+                <h3 style="text-decoration: underline; text-align: center; margin-bottom: 5px;">Today's Weather</h3>
+                <div style="gap: 5px; width: 90%; height: 20%; margin: auto; display: flex; justify-content: space-around; align-items: center;">
+                    <div>Time</div>
+                    <div>Temperature</div>
+                    <div>weatherIcon</div>
+                </div>
+                <div style="gap: 5px; width: 90%; height: 20%; margin: auto; display: flex; justify-content: space-around; align-items: center;">
+                    <div>Time</div>
+                    <div>Temperature</div>
+                    <div>weatherIcon</div>
+                </div>
+                <div style="gap: 5px; width: 90%; height: 20%; margin: auto; display: flex; justify-content: space-around; align-items: center;">
+                    <div>Time</div>
+                    <div>Temperature</div>
+                    <div>weatherIcon</div>
+                </div>
+                <div style="gap: 5px; width: 90%; height: 20%; margin: auto; display: flex; justify-content: space-around; align-items: center;">
+                    <div>Time</div>
+                    <div>Temperature</div>
+                    <div>weatherIcon</div>
+                </div>
+            </div>
+        </div>
+        <h3 style="text-decoration: underline; text-align: center; margin-bottom: 5px;">Week Overview</h3>
+        <div id = "Week" style="height: 40%; width: 100%; padding: 5px; display: flex; gap: 50px;">
+            <h3 style="text-decoration: underline; text-align: center; margin-bottom: 5px;">Week Overview</h3>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex; flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+            <div style="height: 90%; width: 12%; margin: auto; display: flex ;flex-direction: column;">
+                <div style="justify-content: space-between ;height: 80%; display: flex; color: aliceblue;">
+                    <div style="margin: auto;">Icon</div>
+                    <div style="justify-content: center ; display: flex; flex-direction: column;">
+                        <div>Max</div>
+                        <div>Min</div>
+                    </div>
+                </div>
+                <div style="height: 20%; margin: auto;">Date</div>
+            </div>
+        </div>  
+    </div>
+  </body>
+</html>
